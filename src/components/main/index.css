@@ -1,0 +1,15 @@
+body {   
+    margin: 0;   
+}
+.main_container {  
+    background-image: url('../../Images/background.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 75%;  
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
