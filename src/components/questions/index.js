@@ -13,7 +13,7 @@ const Questions = ({ questionNumber, setQuestionNumber, setStop, set50_50Used, s
     }, [questionNumber]);
 
     const handleClick = (answer) => {
-        if (isAnswering) return;  
+        if (isAnswering);  
         setIsAnswering(true); 
         setSelectedAnswer(answer);       
         setAnswerClass("answer active");

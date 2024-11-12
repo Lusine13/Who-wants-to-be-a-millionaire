@@ -3,14 +3,13 @@ import { EarningMoney } from '../../constants';
 import './index.css';
 
 const Money = ({ questionNumber }) => {
-    const [earned, setEarned] = useState("$0");
-    
+    const [ earned, setEarned ] = useState(0);
     useEffect(() => {
-        if (questionNumber > 0 && questionNumber <= EarningMoney.length) {
+        if (questionNumber > 1 && questionNumber <= EarningMoney.length) {
             setEarned(EarningMoney[questionNumber - 1]);
         }
         else {
-            setEarned("$0");
+            setEarned(0);
         }
        
     }, [questionNumber]);
